@@ -154,7 +154,7 @@ if(isset($_SESSION["cart_session"]))
 						<div class="dd">
 					   <li  class="active"><a href="products.php"> Products</a></li>
 					   	   <li>
-						<a href="hireemployee.php">Hire Employee</a>
+						<a href="hireemployee.php">Apply Job</a>
 						<div class="dd">
 						</div>
 					</li>
@@ -233,8 +233,8 @@ if(isset($_SESSION["cart_session"]))
             echo '<div class="product-info">';
 			echo '<p><span class="price"> Price:<big style="color:green">'.$currency.$obj->Price.'</big></span></p>';
             echo 'Qty <input type="text" name="product_qty" value="1" size="3" />';
-            echo '<select name="size" id="select" style="width:200px"><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select>';
-            echo '<select name="color" id="select" style="width:200px"><option value="black">Black</option><option value="white">White</option><option value="black&white">Black & White</option></select>';
+            echo '<select name="size" id="select" style="width:200px"><option value="line">Please select a size</option><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select>';
+            echo '<select name="color" id="select" style="width:200px"><option value="line">Please select a color</option><option value="black">Black</option><option value="white">White</option><option value="black&white">Black & White</option></select>';
 			echo '<div class="button"><span><img src="images/cart.jpg" alt="" /><button class="cart-button"  class="add_to_cart">Add to Cart</button></span> </div>';
 			echo '</div></div>';
             echo '<input type="hidden" name="Product_ID" value="'.$obj->Product_ID.'" />';
@@ -289,15 +289,6 @@ if(isset($_SESSION["cart_session"]))
 
 						</ul>
 					</div>
-					<div class="box last-box">
-						<h2>Categories</h2>
-						<ul>
-							<li><a href="#" title="Clothes">Clothes</a></li>
-							<li><a href="#" title="Cleaning Material">Cleaning Material</a></li>
-							<li><a href="#" title="Fizzi Drinks">Fizzy Drinks</a></li>
-							<li><a href="#" title="Food Stuff">Food Stuff</a></li>
-						</ul>
-					</div>
 					<div class="cl">&nbsp;</div>
 				</div>
 				<!-- End Shell -->
@@ -306,12 +297,6 @@ if(isset($_SESSION["cart_session"]))
 				<!-- Begin Shell -->
 				<div class="shell">
 					<div class="carts">
-						<ul>
-							<li><span>We accept</span></li>
-							<li><a href="#" title="PayPal"><img src="images/cart-img1.jpg" alt="PayPal" /></a></li>
-							<li><a href="#" title="VISA"><img src="images/cart-img2.jpg" alt="VISA" /></a></li>
-							<li><a href="#" title="MasterCard"><img src="images/cart-img3.jpg" alt="MasterCard" /></a></li>
-						</ul>
 					</div>	<p>&copy; Groups <a href="index.php"><i><font color="fefefe"> Welcome To Store Online Shopping Site </font></i></a></p>
 					<div class="cl">&nbsp;</div>
 					Copyright © 2018 Store.com All rights reserved. The information contained in Store.com may not be published, broadcast, rewritten, or redistributed without the prior written authority of Store.com

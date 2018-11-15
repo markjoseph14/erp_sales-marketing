@@ -25,7 +25,7 @@
             
              <li><a href="products.php"> Products</a></li>
                  <li>
-            <a href="hireemployee.php">hire employee</a>
+            <a href="hireemployee.php">Apply Job</a>
             <div class="dd">
               <ul>
                 
@@ -109,15 +109,6 @@
 
             </ul>
           </div>
-          <div class="box last-box">
-            <h2>Categories</h2>
-            <ul>
-              <li><a href="#" title="Clothes">Clothes</a></li>
-              <li><a href="#" title="Cleaning Material">Cleaning Material</a></li>
-              <li><a href="#" title="Fizzi Drinks">Fizzy Drinks</a></li>
-              <li><a href="#" title="Food Stuff">Food Stuff</a></li>
-            </ul>
-          </div>
           <div class="cl">&nbsp;</div>
         </div>
         <!-- End Shell -->
@@ -126,12 +117,6 @@
         <!-- Begin Shell -->
         <div class="shell">
           <div class="carts">
-            <ul>
-              <li><span>We accept</span></li>
-              <li><a href="#" title="Zaad service"><img src="images/zaad.png" alt="Zaad Service" /></a></li>
-              <li><a href="#" title="Somstore"><img alt="Somstore" /></a></li>
-        
-            </ul>
           </div>  <p>&copy; Groups <a href="index.php"><i><font color="fefefe"> Welcome To Store Online Shopping Site </font></i></a></p>
           <div class="cl">&nbsp;</div>
           Copyright © 2018 Store.com All rights reserved. The information contained in Store.com may not be published, broadcast, rewritten, or redistributed without the prior written authority of Store.com

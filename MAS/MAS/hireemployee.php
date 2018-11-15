@@ -47,7 +47,7 @@
 						
 					   <li><a href="products.php"> Products</a></li>
 					   	   <li  class="active">
-						<a href="hireemployee.php">Hire Employee</a>
+						<a href="hireemployee.php">Apply Job</a>
 						<div class="dd">
 							<ul>
 							</ul>
@@ -86,43 +86,25 @@
     </div>
   </div>
 	<div class="form-group">
-			<label class="col-sm-2 control-label">Gender:</label>
+			<label class="col-sm-2 control-label">Position:</label>
 			<div class="col-sm-8">
-			 <select name="gender" required="" style="width:710px;height:35px;border-radius:5px;color:black">
-        <option value="">Please select a gender</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
+			 <select name="position" required="" style="width:710px;height:35px;border-radius:5px;color:black">
+        <option value="">Please select a position</option>
+        <option value="Account Coordinator">Account Coordinator</option>
+        <option value="Account Executive">Account Executive</option>
+        <option value="Assistant Account Executive">Assistant Account Executive</option>
+        <option value="Inside Sales Representative">Inside Sales Representative</option>
+        <option value="Outside Sales Representative">Outside Sales Representative</option>
+        <option value="Regional Account Manager">Regional Account Manager</option>
+        <option value="Regional Sales Manager">Regional Sales Manager</option>
+        <option value="Relationship Manager">Relationship Manager</option>
       </select>
 		</div>
 	</div>
 	<div class="form-group">
-    <label class="col-sm-2 control-label">Birthday:</label>
+    <label class="col-sm-2 control-label">Salary:</label>
     <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="birthday" type="date" required="">
-    </div>
-</div>
-	<div class="form-group">	
-    <label class="col-sm-2 control-label">Contact No:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="contact" type="integer" placeholder="Enter your contact number" maxlength="11" required="">
-    </div>
-</div>
-<div class="form-group">	
-    <label class="col-sm-2 control-label">Email:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="email" type="email" placeholder="Enter your email" maxlength="" required="">
-    </div>
-</div>
-	<div class="form-group">	
-    <label class="col-sm-2 control-label">Age:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="age" type="integer" placeholder="Enter your age" required="" maxlength="30">
-    </div>
-</div>
-	<div class="form-group">
-    <label class="col-sm-2 control-label">Address:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="address" type="text" placeholder="Enter your address" required="" maxlength="30">
+      <input class="form-control" style="color:black" name="salary" type="text" placeholder="Enter a salary" required="" maxlength="30">
     </div>
 </div>
 	     <div class="col-sm-8">
@@ -167,15 +149,7 @@
 
             </ul>
           </div>
-          <div class="box last-box">
-            <h2>Categories</h2>
-            <ul>
-              <li><a href="#" title="Clothes">Clothes</a></li>
-              <li><a href="#" title="Cleaning Material">Cleaning Material</a></li>
-              <li><a href="#" title="Fizzi Drinks">Fizzy Drinks</a></li>
-              <li><a href="#" title="Food Stuff">Food Stuff</a></li>
-            </ul>
-          </div>
+        
           <div class="cl">&nbsp;</div>
         </div>
         <!-- End Shell -->
@@ -184,12 +158,6 @@
         <!-- Begin Shell -->
         <div class="shell">
           <div class="carts">
-            <ul>
-              <li><span>We accept</span></li>
-              <li><a href="#" title="Zaad service"><img src="images/zaad.png" alt="Zaad Service" /></a></li>
-              <li><a href="#" title="Somstore"><img alt="Somstore" /></a></li>
-        
-            </ul>
           </div>  <p>&copy; Groups <a href="index.php"><i><font color="fefefe"> Welcome To Store Online Shopping Site </font></i></a></p>
           <div class="cl">&nbsp;</div>
           Copyright © 2018 Store.com All rights reserved. The information contained in Store.com may not be published, broadcast, rewritten, or redistributed without the prior written authority of Store.com

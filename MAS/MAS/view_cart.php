@@ -166,10 +166,8 @@ if(isset($_SESSION["cart_session"]))
 		echo '<table cellspacing="0">';
 			  echo   '<thead>';
 		  echo '<tr>';
-		  echo '<td>Check:</td>';
 		  echo '<td>Product:</td>';
 		  echo '<td>Quantity:</td>';
-		 echo ' <td>Description:</td>';
 		  echo '<td>Price:</td>';
 		  echo '<td>Size:</td>';
 		  echo '<td>Color:</td>';
@@ -181,7 +179,7 @@ if(isset($_SESSION["cart_session"]))
 		foreach ($_SESSION["cart_session"] as $cart_itm)
         {
            $Product_ID  = $cart_itm["code"];
-		   $results = $mysqli->query("SELECT productName,Description, Price FROM product  WHERE Product_ID='$Product_ID'"); 
+		   $results = $mysqli->query("SELECT productName,Price FROM product  WHERE Product_ID='$Product_ID'"); 
           if ($results) { 
 		  
 	        
@@ -192,10 +190,8 @@ if(isset($_SESSION["cart_session"]))
 			
 		  
 		    echo '<tr class="cart-itm">';
-            echo '<td><input type="checkbox"></td>';
-			echo '<td><h3>'.$obj->productName.' (Code :'.$Product_ID.')</h3></td> ';
+            echo '<td><h3>'.$obj->productName.' (Code :'.$Product_ID.')</h3></td> ';
             echo '<td class="p-qty">Qty :<input type="text" name="product_qty" value="'.$cart_itm["TiradaProductTiga"].'" size="2"   maxlength="5" /></td>';
-            echo '<td>'.$obj->Description.'</td>';
 		    echo '<td class="p-price" style="color:green"><b>'.$currency.$obj->Price.'</b></td>';
 			echo '<td><span class="remove-check"><a href="cart_update.php?removep='.$cart_itm["code"].'&return_url='.$current_url.'">&times;</a></span></td>';
             echo '</tr>';
@@ -206,7 +202,6 @@ if(isset($_SESSION["cart_session"]))
 
 			echo '<input type="hidden" name="item_name['.$cart_items.']" value="'.$obj->productName.'" />';
 			echo '<input type="hidden" name="item_code['.$cart_items.']" value="'.$Product_ID.'" />';
-			echo '<input type="hidden" name="item_desc['.$cart_items.']" value="'.$obj->Description.'" />';
 			echo '<input type="hidden" name="item_qty['.$cart_items.']" value="'.$cart_itm["TiradaProductTiga"].'"/>';
 			$cart_items ++;
 			      		    }}}
@@ -310,15 +305,6 @@ if(isset($_SESSION["cart_session"]))
 
 						</ul>
 					</div>
-					<div class="box last-box">
-						<h2>Categories</h2>
-						<ul>
-							<li><a href="#" title="Clothes">Clothes</a></li>
-							<li><a href="#" title="Cleaning Material">Cleaning Material</a></li>
-							<li><a href="#" title="Fizzi Drinks">Fizzy Drinks</a></li>
-							<li><a href="#" title="Food Stuff">Food Stuff</a></li>
-						</ul>
-					</div>
 					<div class="cl">&nbsp;</div>
 				</div>
 				<!-- End Shell -->
@@ -326,12 +312,6 @@ if(isset($_SESSION["cart_session"]))
 			<div class="copy">
 				<!-- Begin Shell -->
 				<div class="shell">
-					<div class="carts">
-						<ul>
-							<li><span>We accept</span></li>
-							<li><a href="#" title="Zaad service"><img src="images/zaad.png" alt="Zaad Service" /></a></li>
-							<li><a href="#" title="Somstore"></a></li>
-						</ul>
 					</div>	<p>&copy; Groups <a href="index.php"><i><font color="fefefe"> Welcome To Store Online Shopping Site </font></i></a></p>
 					<div class="cl">&nbsp;</div>
 					Copyright © 2018 Store.com All rights reserved. The information contained in Store.com may not be published, broadcast, rewritten, or redistributed without the prior written authority of Store.com

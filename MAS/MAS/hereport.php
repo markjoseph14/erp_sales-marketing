@@ -5,12 +5,8 @@ if (isset($_GET['edit'])) {
   $rec = mysqli_query($db,"SELECT * FROM tb_employee WHERE id='$id'");
   $record = mysqli_fetch_array($rec);
   $name = $record['name'];
-  $gender = $record['gender'];
-  $birthday = $record['birthday'];
-  $contact = $record['contact'];
-  $email = $record['email'];
-   $age = $record['age'];
-    $address = $record['address'];
+  $position = $record['position'];
+  $salary = $record['salary'];
   $id = $record['id']; 
 }
 ?>
@@ -152,17 +148,13 @@ $(document).ready(function() {
     <br>
 <div class="container-fluid" >  
    <h2 style="text-align:center;color:blue">HE Report</h2>
-    <div id="printableArea"><center><div><table class="table table-bordered table-striped" style="width:1200px;float:center">
+    <div id="printableArea"><center><div><table class="table table-bordered table-striped" style="width:800px;float:center">
     <thead style="background-color:green">
       <tr style="color:white">
           <th style="text-align:center">Employee ID</th>
           <th style="text-align:center">Full Name</th>
-          <th style="text-align:center">Gender</th>
-          <th style="text-align:center">Birthday</th>
-          <th style="text-align:center">Contact No.</th>
-          <th style="text-align:center">Email</th>
-          <th style="text-align:center">Age.</th>
-          <th style="text-align:center">Address.</th>
+          <th style="text-align:center">Position</th>
+          <th style="text-align:center">Salary</th>
           <th style="text-align:center">Action</th>
       </tr>
     </thead>
@@ -170,12 +162,8 @@ $(document).ready(function() {
        <?php while ($row = mysqli_fetch_array($results)) { ?>
           <td><?php echo $row['id'];?></td>
           <td><?php echo $row['name'];?></td>
-          <td><?php echo $row['gender'];?></td>
-          <td><?php echo $row['birthday'];?></td>
-          <td><?php echo $row['contact'];?></td>
-          <td><?php echo $row['email'];?></td>
-          <td><?php echo $row['age'];?></td>
-          <td><?php echo $row['address'];?></td>
+          <td><?php echo $row['position'];?></td>
+          <td><?php echo $row['salary'];?></td>
           <td><a class="btn btn-success" href="hereport.php?edit=<?php echo $row['id']; ?>">Edit<span class="glyphicon glyphicon-edit"></span></a>
               <a class="btn btn-danger" href="hireemployeecon.php?del=<?php echo $row['id']; ?>">Delete<span class="glyphicon glyphicon-trash"></span></a></td>
         </tr>
@@ -187,18 +175,18 @@ $(document).ready(function() {
 <br>
 <br>
 <br>
-<div class="container">
+<div class="container" style="width:1000px">
 <div class="col-md-12">
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h1 class="panel-title" style="text-align:center">Edit the information</h1>
+      <h1 class="panel-title" style="text-align:center">Edit the form</h1>
     </div>
     <div class="panel-body">
-<form class="form-horizontal" role="form" style="color:blue;width:900px;margin-left:150px" action="hereport.php" method="POST">
+<form class="form-horizontal" role="form" style="color:blue;width:800px;margin-left:50px" action="hereport.php" method="POST">
   <div class="form-group">
     <label class="col-sm-2 control-label">Employee ID:</label>
     <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="id" type="integer"  value="<?php echo $id; ?>" >
+      <input class="form-control" style="color:black" name="id" type="integer"  value="<?php echo $id; ?>" disabled>
     </div>
   </div>
   <div class="form-group">
@@ -208,39 +196,15 @@ $(document).ready(function() {
     </div>
   </div>
   <div class="form-group">  
-    <label class="col-sm-2 control-label">Gender:</label>
+    <label class="col-sm-2 control-label">Position:</label>
     <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="gender" type="text"  value="<?php echo $gender; ?>">
+      <input class="form-control" style="color:black" name="position" type="text"  value="<?php echo $position; ?>">
     </div>
 </div>
 <div class="form-group">
-    <label class="col-sm-2 control-label">Birthday:</label>
+    <label class="col-sm-2 control-label">Salary:</label>
     <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="birthday" type="date" value="<?php echo $birthday; ?>">
-    </div>
-</div>
-  <div class="form-group">  
-    <label class="col-sm-2 control-label">Contact No:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="contact" type="text" value="<?php echo $contact; ?>" >
-    </div>
-</div>
-<div class="form-group">  
-    <label class="col-sm-2 control-label">Email:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="email" type="email" value="<?php echo $email; ?>">
-    </div>
-</div>
-  <div class="form-group">  
-    <label class="col-sm-2 control-label">Age:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="age" type="integer" value="<?php echo $age; ?>">
-    </div>
-</div>
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Address:</label>
-    <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="address" type="text" value="<?php echo $address; ?>">
+      <input class="form-control" style="color:black" name="birthday" type="text" value="<?php echo $salary; ?>">
     </div>
 </div>
 <br>
@@ -248,7 +212,7 @@ $(document).ready(function() {
        <div class="col-sm->">
       <?php if ($edit_state==false): ?>
     <?php else: ?>
-    <button type="submit" name="update" class="btn btn-info" style="width:780px">Update</button>
+    <button type="submit" name="update" class="btn btn-info" style="background-color:blue;color:white;margin-left:50px;width:500px">Update</button>
     <?php endif ?>
        </div>
 </div>

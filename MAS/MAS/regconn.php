@@ -35,9 +35,7 @@ else{
 } 
 		}
 }		
-
 if (isset($_POST['update'])) {
-	$id=trim($_POST['id']);
 	$fullname=trim($_POST['fullname']);
 	$contact=trim($_POST['contact']);
 	$email=trim($_POST['email']);
@@ -45,8 +43,7 @@ if (isset($_POST['update'])) {
 	$username=trim($_POST['username']);
 	$password = trim($_POST['password']);
 	
-
-	mysqli_query($db,"UPDATE tbl_sign SET id='$id,'fullname='$fullname',contact='$contact',email='$email',address='$address',username='$username',password='$password'");
+	mysqli_query($db,"UPDATE tbl_sign SET 'fullname='$fullname',contact='$contact',email='$email',address='$address',username='$username',password='$password'");
 	echo "<script>alert('Registration form updated')</script>";
 	header('location: regreport.php');
 }
@@ -58,7 +55,6 @@ if (isset($_GET['del'])) {
 	header('location: regreport.php');
 
 }
-
 $result=mysqli_query($db,"SELECT * FROM tbl_sign");
 
 ?>

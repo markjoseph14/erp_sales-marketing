@@ -168,7 +168,7 @@ if(isset($_SESSION["cart_session"]))
 						
 					   <li><a href="products.php"> Products</a></li>
 					   	   <li>
-						<a href="hireemployee.php">Hire Employee</a>
+						<a href="hireemployee.php">Apply Job</a>
 					</li>
 					  <li><a href="#">About Us</a></li>
 					   <li><a href="contact1.php">Feedback</a></li>
@@ -304,8 +304,8 @@ if(isset($_SESSION["cart_session"]))
             echo '<div class="product-info">';
 			echo '<p><span class="price"> Price:<big style="color:green">'.$currency.$obj->Price.'</big></span></p>';
             echo 'Qty <input type="text" name="product_qty" value="1" size="3" />';
-			echo '<select name="size" id="select" style="width:200px"><option value="small">----------------------------------</option><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select>';
-            echo '<select name="color" id="select" style="width:200px"><option value="small">----------------------------------</option><option value="black">Black</option><option value="white">White</option><option value="black&white">Black & White</option></select>';
+			echo '<select name="size" id="select" style="width:200px"><option value="small">Please select a size</option><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select>';
+            echo '<select name="color" id="select" style="width:200px"><option value="small">Please select a color</option><option value="black">Black</option><option value="white">White</option><option value="black&white">Black & White</option></select>';
 			echo '<div class="button"><span><img src="images/cart.jpg" alt="" /><button class="cart-button"  class="add_to_cart">Add to Cart</button></span> </div>';
 			echo '</div></div>';
             echo '<input type="hidden" name="Product_ID" value="'.$obj->Product_ID.'" />';
@@ -361,18 +361,9 @@ if(isset($_SESSION["cart_session"]))
 						<ul>
 							<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
 							<li><a href="#" title="Contact Us">Contact Us</a></li>
-							<li><a href="#" title="Log In">Log In</a></li>
-							<li><a href="#" title="Account">Account</a></li>
+							<li><a href="login.php" title="Log In">Login</a></li>
+							<li><a href="signup.php" title="Account">Sign Up</a></li>
 
-						</ul>
-					</div>
-					<div class="box last-box">
-						<h2>Categories</h2>
-						<ul>
-							<li><a href="#" title="Clothes">Clothes</a></li>
-							<li><a href="#" title="Cleaning Material">Cleaning Material</a></li>
-							<li><a href="#" title="Fizzi Drinks">Fizzy Drinks</a></li>
-							<li><a href="#" title="Food Stuff">Food Stuff</a></li>
 						</ul>
 					</div>
 					<div class="cl">&nbsp;</div>
@@ -383,12 +374,6 @@ if(isset($_SESSION["cart_session"]))
 				<!-- Begin Shell -->
 				<div class="shell">
 					<div class="carts">
-						<ul>
-							<li><span>We accept</span></li>
-							<li><a href="#" title="Zaad service"><img src="images/zaad.png" alt="Zaad Service" /></a></li>
-							<li><a href="#" title="Somstore"></a></li>
-				
-						</ul>
 					</div>	<p>&copy; Groups <a href="index.php"><i><font color="fefefe"> Welcome To Store Online Shopping Site </font></i></a></p>
 					<div class="cl">&nbsp;</div>
 					Copyright © 2018 Store.com All rights reserved. The information contained in Store.com may not be published, broadcast, rewritten, or redistributed without the prior written authority of Store.com

@@ -177,18 +177,18 @@ $(document).ready(function() {
 <br>
 <br>
 <br>
-<div class="container">
+<div class="container" style="width:1000px">
 <div class="col-md-12">
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h1 class="panel-title" style="text-align:center">Edit the information</h1>
+      <h1 class="panel-title" style="text-align:center">Edit the form</h1>
     </div>
     <div class="panel-body">
-<form class="form-horizontal" role="form" style="color:blue;width:900px;margin-left:150px" action="contact1.php" method="POST">
+<form class="form-horizontal" role="form" style="color:blue;width:900px;margin-left:50px" action="contact1.php" method="POST">
   <div class="form-group">
     <label class="col-sm-2 control-label">ID:</label>
     <div class="col-sm-8">
-      <input class="form-control" style="color:black" name="id" type="integer"  value="<?php echo $id; ?>" >
+      <input class="form-control" style="color:black" name="id" type="integer"  value="<?php echo $id; ?>" disabled>
     </div>
   </div>
   <div class="form-group">
@@ -220,7 +220,7 @@ $(document).ready(function() {
        <div class="col-sm->">
       <?php if ($edit_state==false): ?>
     <?php else: ?>
-    <button type="submit" name="update" class="btn btn-info" style="width:780px">Update</button>
+    <button type="submit" name="update" class="btn btn-info" style="background-color:blue;color:white;margin-left:50px;width:500px">Update</button>
     <?php endif ?>
        </div>
 </div>
