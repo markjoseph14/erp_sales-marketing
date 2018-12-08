@@ -1,0 +1,139 @@
+{
+  "id": "16405786-d389-48da-9399-f8ab290a7026",
+  "version": "1.1",
+  "name": "RegistrationForm_07",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "dc24a8ee-a30c-4ea8-84cb-bae0cece2b79",
+    "name": "Registration_Test07",
+    "commands": [{
+      "id": "3c29b69d-dad1-47cf-82e5-626b28460d84",
+      "comment": "",
+      "command": "open",
+      "target": "/MAS/MAS/signup.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f1088c0-1cf5-4f42-9598-33cf8301d112",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x604",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d2623de-492f-41f7-ad16-be1df207645e",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=input[name=\"fullname\"]", "css"],
+        ["css=.form-group:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0312c46-6bea-4b2d-bc8b-6f2b4933671a",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=input[name=\"fullname\"]", "css"],
+        ["css=.form-group:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "khim lynnard felicisimo"
+    }, {
+      "id": "a9f574fe-228b-4043-a5cc-5907921af3c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=contact",
+      "targets": [
+        ["name=contact", "name"],
+        ["css=input[name=\"contact\"]", "css"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='contact']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "09123456789"
+    }, {
+      "id": "17f075ad-b210-4b85-9fcc-536857bde38f",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input[name=\"email\"]", "css"],
+        ["css=.form-group:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "sam@gmail.com"
+    }, {
+      "id": "bb052181-d72e-49df-a146-5385f738ed6d",
+      "comment": "",
+      "command": "type",
+      "target": "name=address",
+      "targets": [
+        ["name=address", "name"],
+        ["css=input[name=\"address\"]", "css"],
+        ["css=.form-group:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "nasugbu batangas"
+    }, {
+      "id": "3d583004-d1a6-442e-9ad9-cb11ad986f14",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input[name=\"username\"]", "css"],
+        ["css=.form-group:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "khim"
+    }, {
+      "id": "3e34f2fa-f2bf-40ee-9446-9465a93b5285",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input[name=\"password\"]", "css"],
+        ["css=.form-group:nth-child(6) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "khim"
+    }, {
+      "id": "a3d4ace5-c72d-4da2-9492-8fd083f00fd2",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input[name=\"submit\"]", "css"],
+        ["css=.col-sm-8:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "13cf8da9-bd1f-4af8-af20-5db256d0ebc9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dc24a8ee-a30c-4ea8-84cb-bae0cece2b79"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
