@@ -1,0 +1,101 @@
+.header{
+	width: 20%;
+	margin: 60px auto 0px;
+	color: white;
+	background-color: blue;
+	text-align: center;
+	border-bottom: none;
+	padding: 30px;
+}
+form, .content{
+	width: 20%;
+	margin: 0px auto;
+	padding: 30px;
+	background: transparent;
+	
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a { 
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+li a:hover:not(.active){
+	background-color: #111;
+}
+body{
+	font-size: 120%;
+	text-align: center;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.k{
+float: top;
+background-color: rgb(122,108,100);
+}
+.l{
+	text-align: left;
+	font-family: courier;
+	font-size: 1px;
+}
+.l , label{
+	text-align: center;
+}
+.image{
+	float: center;
+	width: 1000px;
+	height: 300px;
+}
+.ml{
+	list-style-type: none;
+}
+img{
+	margin: 5px;
+	border: 0px solid #ccc;
+	float: left;
+	width: 17px;
+	height:1350px;
+}
+div.img img {
+	width: 170px;
+	height: 135px;
+	border-radius: 3px;
+}
+div.desc{
+	text-align: center;
+	background-color: white;
+	float: center;
+}
+footer{
+	text-align: center;
+	padding: 1em;
+	color: black;
+	background-color:blue;
+	clear: left;
+	position: bottom;
+
+}
+#grad{
+	background: yellow;
+	}
+#hehe{
+	margin: 0px;
+}
+#grad img{
+	height: 70px;
+	width: 100px;
+	margin-left: 20px; 
+}
