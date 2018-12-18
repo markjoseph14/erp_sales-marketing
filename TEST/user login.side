@@ -1,0 +1,178 @@
+{
+  "id": "d93be551-b482-46e3-8665-58fd12e93861",
+  "version": "1.1",
+  "name": "user login",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "6ffb2449-8a32-4bef-9226-57969612a36a",
+    "name": "userlogin_tst_01",
+    "commands": [{
+      "id": "67725e6f-da38-4a05-b83e-525b15c77a97",
+      "comment": "",
+      "command": "open",
+      "target": "/MAS/MAS/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e5c9f6e-2681-4462-ad49-8df8ae1b3e3e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1060x604",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d4c1a63-4c9b-4afd-af16-bb0755020648",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input[name=\"username\"]", "css"],
+        ["css=.form-group:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "khim"
+    }, {
+      "id": "f494051e-07fc-4638-b1bd-db39743572d9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input[name=\"password\"]", "css"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "kihm"
+    }, {
+      "id": "79f58124-ce61-4822-9da6-bc2ab79531b1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input[name=\"password\"]", "css"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7327d331-a2b7-4d89-a250-699cdff810ef",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input[name=\"username\"]", "css"],
+        ["css=.form-group:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "khim"
+    }, {
+      "id": "d3cb83f3-48ff-4265-8c38-3fd110537a5b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input[name=\"password\"]", "css"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "khim"
+    }, {
+      "id": "fca4a590-82df-4616-b2f8-269a936e9102",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input[name=\"password\"]", "css"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "35bab636-3893-407c-972b-aacb0114bd9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shell li:nth-child(5) > a",
+      "targets": [
+        ["css=.shell li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navigation']/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../login.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1673d5e5-a1bc-4fc5-91a7-25681f373692",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input[name=\"username\"]", "css"],
+        ["css=.form-group:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "blah"
+    }, {
+      "id": "856d7c0e-79a5-4b29-8ac2-a1e4dcaa9cde",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input[name=\"password\"]", "css"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "blah"
+    }, {
+      "id": "bffb89d3-9d7b-4f4c-b119-45853125fe7a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input[name=\"password\"]", "css"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b91ec698-c9cc-4c34-82fa-493364e45c0b",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=button[name=\"login\"]", "css"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "489436d3-4b8a-41c8-918f-24a3f2b45e74",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ffb2449-8a32-4bef-9226-57969612a36a"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
