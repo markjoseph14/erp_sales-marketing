@@ -1,0 +1,133 @@
+{
+  "id": "f8dc52c4-5958-42a7-bfe6-589fb29db813",
+  "version": "1.1",
+  "name": "user feedback",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "c5256ce2-11ff-4fda-86ef-1f9bbe08b95a",
+    "name": "user feedback_tst_05",
+    "commands": [{
+      "id": "6346cf1e-0f77-4ed6-b1cf-759de590ad44",
+      "comment": "",
+      "command": "open",
+      "target": "/MAS/MAS/user/contact1.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "774ae1d5-12f8-4561-9d99-6c675a03eb50",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1060x604",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c379a5d-a6f3-4b11-9071-694cd98450bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7750307a-51cb-4a72-814b-958bfebb8044",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "macalindong"
+    }, {
+      "id": "4bbc1a44-8bb3-4461-b5b0-faf1c6dbf0e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "macalindong@gmail.com"
+    }, {
+      "id": "b927b0e8-3fe5-45b5-ba83-5aba66667e7a",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "0912345677"
+    }, {
+      "id": "8a65e9d6-deb1-4839-8536-c99697e41391",
+      "comment": "",
+      "command": "type",
+      "target": "id=textarea",
+      "targets": [
+        ["id=textarea", "id"],
+        ["name=subject", "name"],
+        ["css=#textarea", "css"],
+        ["css=#textarea", "css:finder"],
+        ["xpath=//textarea[@id='textarea']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "your system is great"
+    }, {
+      "id": "a70bdc36-c90b-4fa6-9aed-08a402449802",
+      "comment": "",
+      "command": "type",
+      "target": "id=textarea",
+      "targets": [
+        ["id=textarea", "id"],
+        ["name=subject", "name"],
+        ["css=#textarea", "css"],
+        ["css=#textarea", "css:finder"],
+        ["xpath=//textarea[@id='textarea']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "your system is great\\n"
+    }, {
+      "id": "d4aaf095-c77a-44f6-b069-fb97f36a4617",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//input[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[5]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "24a8e057-10d6-4c85-82af-f47bcc08adb3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c5256ce2-11ff-4fda-86ef-1f9bbe08b95a"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
